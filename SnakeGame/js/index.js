@@ -13,15 +13,15 @@ let obstacles=[{x:4,y:4},{x:14,y:14},{x:4,y:4},{x:14,y:14},{x:4,y:4},{x:14,y:14}
 let speed=8
 
 function easy(){
-     speed = 6;
+     speed = 3;
      obstacles=[{x:4,y:4},{x:14,y:14},{x:4,y:4},{x:14,y:14},{x:4,y:4},{x:14,y:14}]
 }
 function medium(){
-     speed = 12;
+     speed = 8;
      obstacles=[{x:4,y:4},{x:14,y:14},{x:9,y:17},{x:12,y:3},{x:4,y:4},{x:14,y:14}]
 }
 function hard(){
-     speed = 16;
+     speed = 12;
      obstacles=[{x:3,y:15},{x:16,y:14},{x:9,y:17},{x:16,y:3},{x:2,y:7},{x:7,y:2}]
 }
 
@@ -125,7 +125,7 @@ function gameEngine(){
                 (fx11==obstacles[2].x)&&(fy11==obstacles[2].y)||
                 (fx11==obstacles[3].x)&&(fy11==obstacles[3].y)||
                 (fx11==obstacles[4].x)&&(fy11==obstacles[4].y)||
-                (fx11==obstacles[5].x)&&(fy11==obstacles[5].y)){
+                (fx11==obstacles[5].x)&&(fy11==obstacles[5].y)||((fx11==0) &&(fx11==5))){
                     console.log("changed the place.")
                     fx();fy();fz();
                 }
